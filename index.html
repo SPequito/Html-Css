@@ -1,0 +1,91 @@
+<!DOCTYPE html >
+<html lang="en"></html>
+ <head>
+    <meta charset="utf-8" />
+    <title>Cat Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+  <h1 id="title">Cat Menu</h1>
+  <p id="description">This is a Page about Cats</p>
+  <form id="survey-form">
+  <!--Form start-->
+
+  <div class="form">
+  <label id="name-label" for="name">Name:</label>
+  <input type="text" id="name" placeholder="Cat Name" required>
+  </div>
+  
+  <div class="form">
+  <label id="email-label" for="email">Email:</label>
+  <input type="email" id="email" placeholder="Cat Email" required>
+  </div>
+
+  <div class="form">
+  <label id="number-label" for="age">Age: </label>
+  <input type="number" id="number" placeholder="Cat Age" min ="0" max="50" required>
+
+<!--Select options -->
+<div class="form">
+  <label for="personality" id="label-personality">   
+    What type of personality does your cat have?
+    </label>
+
+<select name="personality" id="dropdown">
+  <option value="seeOption">See option</option>
+  <option value="funny">Funny Cat</option>
+  <option value="grumpy">Grumpy Cat</option>
+  <option value="destroyer">Destroyer Cat</option>
+  <option value="dummy">Dummy Cat</option>
+</select>
+  </div>
+
+  <!--Radio options-->
+
+  <div class="form">
+    <label>Your Cat Like Humans</label>
+
+    <label for="option1">
+      <input type="radio" id="option1" name="option" value="yes">Yes</input>
+      <input type="radio" id="option2" name="option" value="no">No</input>
+      <input type="radio" id="option3" name="option" value="sometimes">Sometimes</input>
+</label>
+</div>
+
+<!--Radio checkbox-->
+
+<div class="form">
+  <label>What your cat like to play?<small>(Check all that apply)</small></label>
+
+    <label for="box1">
+    <input type="checkbox" name="box" value="1">Play catch</input></label>
+    
+    <label for="box2">
+    <input type="checkbox" name="box" value="2" >Jumpy</input></label>
+    
+    <label for="box3">
+    <input type="checkbox" name="box" value="3">Play with a rope</input></label>
+    
+    <label for="box4">
+    <input type="checkbox" name="box" value="4">Play with toy rat</input></label>
+    
+    <label for="box5">
+    <input type="checkbox" name="box" value="5">Play hide and seek</input></label>
+
+  </div>
+
+<!--Text Area-->
+
+<div class="form">
+  <label>Talk more about your Cat were.</label>
+
+  <textarea name="talkAbout" id="talkAbout" placeholder="Talk were MIAHHHHHH"></textarea>
+  </div>
+ 
+  <!--Summit Botton-->
+
+  <button id="submit" type="submit" value="submit">Miauu</button>
+  </form>
+  <body>
+    </html>
